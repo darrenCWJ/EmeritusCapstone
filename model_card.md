@@ -26,12 +26,13 @@ Give a summary graph or metrics of how the model performs. Remember to include h
 From the model, the random forest scored an average precision of 99% on the different type of diseases on the test dataset. For the SVM, it got a 100% accuracy on the test dataset. This may be due to the small sampling size of the dataset and will require more types of diseases to be included to have a better guage in the testing.
 
 Random Forest Model
-                               accuracy                           0.99
-                              macro avg       0.99      0.99      0.99
-                           weighted avg       0.99      0.99      0.99
+    <div align="center">                           accuracy                           0.99  </div>
+    <div align="center">                              macro avg                           0.99 </div>
+    <div align="center">                          weighted avg                           0.99  </div>
 
 
-Support Vector Model Confusion Matrix
+
+### Support Vector Model Confusion Matrix
 ![Screenshot](image.png)
 
 ## Limitations
@@ -43,4 +44,4 @@ Outline the limitations of your model.
 
 Outline any trade-offs of your model, such as any circumstances where the model exhibits performance issues. 
 
-- As the dataset expands, both SVM and RandomForest will take a longer time in computation as these models are computationally expensive and also will take a longer time to run due to the hyperparameter tuning function as gridsearch.
+- As the dataset expands, both SVM and RandomForest will take a longer time to retrain, as these models are computationally expensive and also will take a longer time to run due to the hyperparameter tuning function as gridsearch.
